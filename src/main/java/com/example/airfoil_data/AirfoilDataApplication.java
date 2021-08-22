@@ -1,5 +1,7 @@
 package com.example.airfoil_data;
 
+import java.util.*;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,8 +17,8 @@ public class AirfoilDataApplication
 	}
 	
 	@GetMapping
-	public String message()
+	public List<String> message()
 	{
-		return "Hello";
+		return List.of("Hello","World");
 	}
 }
